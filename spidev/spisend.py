@@ -32,17 +32,17 @@ class spibus():
 		ioctl(self.fd, SPI_IOC_MESSAGE(1),addressof(self.ioctl_arg))
 
 #Open the SPI bus 0
-spibus0 = spibus("/dev/spidev32765.0")
+spi1bus = spibus("/dev/spidev32765.0")
 
 #Send two characters
-spibus0.write_buffer[0]=0x55
-spibus0.write_buffer[1]=0xAA
+spibus1.write_buffer[0]=0x55
+spibus1.write_buffer[1]=0xAA
 
-spibus0.send(2)
+spibus1.send(2)
 
 #Shows the 2 byte received in full duplex in hex format
-print(hex(ord(spibus0.read_buffer[0])))
-print(hex(ord(spibus0.read_buffer[1])))
+print(hex(ord(spi1bus.read_buffer[0])))
+print(hex(ord(spi1bus.read_buffer[1])))
 
 
 

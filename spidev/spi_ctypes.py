@@ -4,7 +4,7 @@
 #
 # User space versions of kernel symbols for SPI clocking modes,
 # matching <linux/spi/spi.h>
-# 
+#
 # Ported to Python ctypes from <linux/spi/spidev.h>
 
 from ctypes import *
