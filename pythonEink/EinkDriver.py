@@ -18,6 +18,7 @@ INVERSE_NEW_IMAGE = 3
 NEW_IMAGE = 4
 
 # Four Basic Liberation Fonts, each having a Bold, Italic, and BoldItalic options
+# To install in Debian: apt-get install fonts-liberation
 FontPath = "/usr/share/fonts/truetype/liberation/"
 FontMono = FontPath + "LiberationMono-Regular.ttf"
 FontSans = FontPath + "LiberationSans-Regular.ttf"
